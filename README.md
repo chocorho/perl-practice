@@ -1,6 +1,6 @@
 # perl-practice
 
-a place to learn and practice perl, with an eye towards becoming familiar enough with it to use it for quick personal calculations (in place of python).
+a place to explore and practice the perl programming language, with an eye towards becoming familiar enough with it to use it for quick personal calculations (in place of python).
 
 # Rationale
 
@@ -20,7 +20,7 @@ str(2) >= 3 returns False;
 "2" >= 3 returns True!
 6. error messages are way clearer in perl.
 7. perl has references.
-8. TODO explore: are lists hashable? Can you easily convert from array to set?
+8. TODO explore: Can you easily convert from array to set in perl? In python, this requires an extra cast to a tuple in order for it to be immutable.
 
 # License
 
