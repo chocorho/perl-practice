@@ -1,4 +1,4 @@
-# perl-practice
+# Perl-practice
 
 a place to explore and practice the perl programming language, with an eye towards becoming familiar enough with it to use it for quick personal calculations (in place of python).
 
