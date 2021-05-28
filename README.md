@@ -12,13 +12,13 @@ __Reasons why I prefer perl to python:__
 2. whitespace is not required, nor does it affect the logical flow of the program. Instead, it is left to the aesthetic whims of the developer.
 3. improved conventions: no one looks at you weird for putting `;` at the end of a line.
 4. variables actually have scope (if a variable is defined inside a scope, you can't call it outside that scope).
-5. consider the following case study about dynamic typing:  
+5. python 2.7 has the following uncanny behavior about dynamic typing:  
 2 >= 3 returns False;  
 str(2) >= 3 returns False;  
 2 >= str(3) returns False;  
 2 >= "3" returns False;  
-"2" >= 3 returns True!!!
-6. error messages are way clearer.
+"2" >= 3 returns True!
+6. error messages are way clearer in perl.
 7. perl has references.
 8. TODO explore: are lists hashable? Can you easily convert from array to set?
 
