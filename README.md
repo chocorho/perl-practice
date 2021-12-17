@@ -6,8 +6,7 @@ a place to explore and practice the perl programming language, with an eye towar
 
 Personal experiences with python have led me to search for a more beautiful alternative. This is likely an unpopular take, but if you're interested, you can view a [private video explaining it here](https://youtu.be/TMqpO_6WKiY), though it does have a couple of imperfections. A summary of points is given below.
 
-__Reasons why I prefer perl to python:__
-
+__Reasons why I prefer perl to python:__    
 1. whitespace is not required, nor does it affect the logical flow of the program. Instead, it is left to the aesthetic whims of the developer.
 2. improved conventions: no one looks at you weird for putting `;` at the end of a line.
 3. variables actually have scope (if a variable is defined inside a scope, you can't call it outside that scope).
@@ -18,7 +17,7 @@ __Reasons why I prefer perl to python:__
   - `2 >= str(3)` returns `False`;  
   - `2 >= "3"` returns `False`;  
   - `"2" >= 3` returns `True`!
-6. error messages in python are far more ambiguous. For example, consider the following error in python3:
+6. error messages in python are far more ambiguous. For example, consider the following error in python3:  
 ```
   File "/home/chozorho/ctf/advent/2021/11/./solve.py", line 77, in <module>
     if (newBoardState[size-1][width-1] > 9):
