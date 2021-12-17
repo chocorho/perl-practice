@@ -13,11 +13,11 @@ __Reasons why I prefer perl to python:__
 3. variables actually have scope (if a variable is defined inside a scope, you can't call it outside that scope).
 4. all the simplest words, like `sum` and `min`, are predefined functions in python, making it a bad practice to use them as variable names.
 5. python 2.7 has the following uncanny behavior about dynamic typing:  
-2 >= 3 returns False;  
-str(2) >= 3 returns False;  
-2 >= str(3) returns False;  
-2 >= "3" returns False;  
-"2" >= 3 returns True!
+`2 >= 3` returns `False`;  
+`str(2) >= 3` returns `False`;  
+`2 >= str(3)` returns `False`;  
+`2 >= "3"` returns `False`;  
+`"2" >= 3` returns `True`!
 6. error messages are way clearer in perl.
 7. perl has references.
 8. TODO explore: Can you easily convert from array to set in perl? In python, this requires an extra cast to a tuple in order for it to be immutable.
