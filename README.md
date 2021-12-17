@@ -18,7 +18,15 @@ __Reasons why I prefer perl to python:__
   - `2 >= str(3)` returns `False`;  
   - `2 >= "3"` returns `False`;  
   - `"2" >= 3` returns `True`!
-6. error messages are way clearer in perl.
+6. error messages in python are far more ambiguous. For example, consider the following error in python3:
+
+```
+  File "/home/chozorho/ctf/advent/2021/11/./solve.py", line 77, in <module>
+    if (newBoardState[size-1][width-1] > 9):
+TypeError: 'int' object is not subscriptable
+```
+
+This message is infuriatingly vague. It uses **one and only one** line to describe the error, and the description uses no more than six words. It does not state *which* expression corresponds to the `'int' object` (e.g., is it newBoardState, or is it newBoardState[size-1]? etc.). It also does not give any column index, so this information cannot be easily inferred. In fact, because python is dynamically typed, it is difficult enough to track down the error: whereas a compiler would have checked this ahead of time before blindly running the program, with errors like these, the programmer must waste time re-checking the code manually. In this case, the error was caused on an earlier line of code, so as it turns out, the line being printed isn't even that helpful.
 7. perl has references.
 8. TODO explore: Can you easily convert from array to set in perl? In python, this requires an extra cast to a tuple in order for it to be immutable.
 
