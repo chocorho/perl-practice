@@ -24,7 +24,7 @@ __Reasons why I prefer perl to python:__
     TypeError: 'int' object is not subscriptable
     ```
     This message is infuriatingly vague. It uses **one and only one** line to describe the error, and the description uses no more than six words. It does not state *which* expression corresponds to the `'int' object` (e.g., is it `newBoardState`, or is it `newBoardState[size-1]`? etc.). It also does not give any column index, so this information cannot be easily inferred. In fact, because python is dynamically typed, it is difficult enough to track down the error: whereas a compiler would have checked this ahead of time before blindly running the program, with errors like these, the programmer must waste time re-checking the code manually. In this case, the error was caused on an earlier line of code, so as it turns out, the line being printed isn't even that helpful.  
-    More relevantly to this repo, while perl is also dynamically typed, the fact that the [variable prefixes force us to mind the data types](https://www.caveofprogramming.com/perl-tutorial/perl-variables-declaring-and-using-variables-in-perl.html#variable) means that this error is less likely to occur in the first place. If one `use`s `warnings`, then they'll see a message like:
+    More relevantly to this repo, while perl is also dynamically typed, the fact that the [variable prefixes force us to mind the data types](https://www.caveofprogramming.com/perl-tutorial/perl-variables-declaring-and-using-variables-in-perl.html) means that this error is less likely to occur in the first place. If one `use`s `warnings`, then they'll see a message like:
     ```
     Global symbol "@test" requires explicit package name (did you forget to declare "my @test"?)
     ```
